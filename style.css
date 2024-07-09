@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+}
+
+
+nav{
+    position: fixed;
+    z-index: 9;
+    height: 19vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.8vw;
+    mix-blend-mode: difference;
+}
+
+.left-nav{
+    cursor: pointer;
+    height: 2.1vw;
+    /* background-color: black; */
+    overflow: hidden;
+}
+
+.right-nav{
+    cursor: pointer;
+    height: 1.8vw;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.left-nav h3{
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: #fff;
+}
+.right-nav h3{
+    font-weight: 500;
+    font-size: 1.3vw;
+    color: #fff;
+}
+
+.left-nav:hover h3:nth-child(1){
+    margin-top: -2vw;
+}
+
+.left-nav h3{
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.right-nav:hover h3:nth-child(1){
+    margin-top: -1.7vw;
+}
+
+.right-nav h3{
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.part1{
+    overflow: hidden;
+}
+
+
+.content-part1{
+    height: 250vh;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+}
+
+.rotate-div{
+    display: flex;
+    gap: 2vw;
+    width: 200%;
+    height: 100%;
+    background-color: black;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    background-color: black;
+    width: calc(100% / 5);
+    height: 100%;
+}
+
+.img-div{
+    /* background-color: brown; */
+    width: 100%;
+    /* height: calc(100% / 4); */
+}
+
+.img-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#row-div1{
+    margin-left: -6%;
+    margin-top: -4%;
+}
+
+#row-div2{
+    margin-top: -6%;
+}
+
+#row-div3{
+    margin-top: -8%;
+}
+
+#row-div4{
+    margin-top: -10%;
+}
+
+.overlay{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay h1{
+    opacity: 0;
+    color: #fff;
+    font-size: 7vw;
+    font-weight: 500;
+}
